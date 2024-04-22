@@ -1,0 +1,139 @@
+.drawer_container {
+    padding: 64px 24px 24px 24px;
+    h1 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .text {
+        color: #ABBBC2;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .method_name {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #393C49;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .payment_methods {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 16px 0;
+        .method {
+            width: 101px;
+            height: 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #393C49;
+            border-radius: 8px;
+            cursor: pointer;
+
+            .methods_name {
+                font-size: 14px;
+                font-weight: 400;
+                color: #ABBBC2;
+            }
+        }
+
+        .active_method {
+            width: 101px;
+            height: 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            cursor: pointer;
+
+            .methods_name {
+                font-size: 14px;
+                font-weight: 400;
+                color: #fff;
+            } 
+        }
+    }
+
+    .payment_inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            label {
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 8px;
+            }
+
+            .input {
+                width: 100%;
+                height: 48px;
+                background-color: #2D303E;
+                border: 1px solid #393C49;
+                border-radius: 8px;
+                padding-inline-start: 14px;
+                font-size: 16px;
+                color: #fff;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .additional {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 13px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        width: 90%;
+        gap: 8px;
+
+        button {
+            width: 100%;
+            height: 48px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:nth-child(1){
+            background-color: inherit;
+            color: #EA7C69;
+            border: 1px solid;
+            border-radius: 8px;
+        }
+        button:nth-child(2){
+            background-color: #EA7C69;
+            color: #fff;
+            border-radius: 8px;
+            border: none;
+        }
+    }
+}

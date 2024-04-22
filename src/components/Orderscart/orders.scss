@@ -1,0 +1,97 @@
+.orders_container {
+    width: 100%;
+    margin-top: 24px;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .orders_image {
+                width: 40px;
+                height: 40px;
+            }
+
+            .order_text {
+
+                .order_name {
+                    color: #fff;
+                }
+                .order_price  {
+                    color: #ABBBC2;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+        .prices {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+
+            .qty {
+                padding: 14px 19px;
+                background-color: #393C49;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22.4px;
+                color: #fff;
+                border-radius: 8px;
+            }
+
+            .prduct_price {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22.4px;
+                color: #fff;
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .inputs {
+            width: 87.5%;
+            height: 48px;
+            background-color: #393C49;
+            border-radius: 8px;
+
+            .note_input {
+                width: 100%;
+                height: 100%;
+                background-color: inherit;
+                border: none;
+                overflow: hidden;
+                border-radius: 8px;
+                padding-inline-start: 14px;
+                color: #fff;
+                font-size: 16px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .del_button {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #EA7C69;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            .delete_image {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
